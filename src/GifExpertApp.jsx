@@ -3,17 +3,18 @@ import { useState } from "react"
 
 export const GifExpertApp = ( ) => {
   
-  const [categories, setCategories] = useState(['One Punch', 'Dragon Ball']);
+  const [categories, setCategories] = useState([]);
 
-  const onAddCategory = () => {
-    setCategories([ 'Valorant', ...categories ]);
+  const onAddCategory = ( newCategory ) => {
+    if ( categories.includes(newCategory) ) return;
+    setCategories([ newCategory, ...categories ]);
   }
 
   return (
     <>
         <h1>GifExpertApp</h1>
 
-        <AddCategory setCategories={ setCategories }/>
+        <AddCategory onNewCategory={ (event) => onAddCategory(event) }/>
 
       <ol>
         {
