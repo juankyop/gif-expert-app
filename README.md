@@ -16,7 +16,6 @@ GifApp is a small yet powerful React project that connects to a GIF API, allowin
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
 
 ## Features
 GifApp is not just about simplicity but also about delivering an optimal user experience. Here are its standout features:
